@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            width: 250px;
+            height: auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+        }
+        #menu-bar li{
+            padding: 15px 10px ;
+            display: inline-block;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #about-img{
+            width: 100%;
+        }
+        .sticky{
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="nature-logo-png.png" id="logo" class="center">
+    </div>
+
+    <nav id="menu-bar" >
+        <li>Home</li>
+        <li>About US</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+    </nav>
+
+    <div id="container">
+        <h1> About us</h1>
+        <img id="about-img" src="about-us.jpg" alt="img">
+    </div>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ipsam beatae provident minima optio incidunt porro exercitationem quidem ad quod, vitae unde ex nihil architecto alias nam ea tenetur quaerat numquam, ipsum a, at assumenda? Tempora atque illum ipsa sint repudiandae quidem ullam tenetur itaque, nesciunt vel, eius id quaerat. Ipsam ut nesciunt id explicabo animi laudantium laborum tempore veniam neque quos temporibus possimus ipsa quod inventore repudiandae recusandae fugit culpa voluptatem earum, aspernatur iste nam amet nostrum autem? Sed exercitationem voluptate ea sunt quae error illo beatae ducimus minima, quia pariatur assumenda possimus, nam sapiente? Adipisci temporibus illum culpa amet voluptatibus dolorum nesciunt quia, ratione inventore id delectus? Officia itaque, ratione enim iure odio voluptas non nihil mollitia quidem, perferendis earum doloribus corporis inventore dolore placeat esse sit aspernatur illo ipsam accusamus consequatur nulla. Consequatur, saepe? Illum commodi, debitis eaque aspernatur cum placeat ut odit iure sapiente pariatur maiores iste esse, cupiditate recusandae, minima fugit odio minus voluptates porro rem molestias incidunt? Quos id vero possimus voluptatum suscipit nulla! Optio, natus incidunt nisi at repellat atque magni quos dolorem officia eius facere neque aspernatur sit cumque in dolores veniam. Cum quaerat dolorum sed, eaque sit cupiditate tenetur odit sequi!
+    </p>
+    <script>
+        window.addEventListener("scroll",function(){
+            let navbar =document.getElementById("menu-bar")
+            if (window.pageYOffset >= 190){
+               navbar.classList.add("sticky");
+                console.log("ok")
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        })
+    </script>
+</body>
+</html>
